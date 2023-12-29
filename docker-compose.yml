@@ -6,7 +6,7 @@ services:
     image: zhangtao25/canyon:main
     restart: always
     volumes:
-      - ./env/canyon/.env:/app/.env
+      - ./envs/canyon/.env:/app/.env
     ports:
       - "8080:8080"
   canyon-s3:
@@ -14,7 +14,7 @@ services:
     image: zhangtao25/canyon-s3:main
     restart: always
     volumes:
-      - ./env/canyon-s3/.env:/app/.env
+      - ./envs/canyon-s3/.env:/app/.env
     ports:
       - "18080:8080"
   canyon-homepage:
