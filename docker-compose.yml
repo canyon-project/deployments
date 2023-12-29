@@ -16,10 +16,10 @@ services:
     volumes:
       - ./envs/canyon-s3/.env:/app/.env
     ports:
-      - "18080:8080"
+      - "28000:8080"
   canyon-homepage:
     container_name: canyon-homepage
     image: zhangtao25/canyon-homepage:main
     restart: always
     ports:
-      - "28080:3000"
+      - "28001:3000"
