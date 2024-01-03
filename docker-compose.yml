@@ -8,7 +8,7 @@ services:
     volumes:
       - ./envs/canyon/.env:/app/.env
     ports:
-      - "8080:8080"
+      - "8000:8080"
   canyon-s3:
     container_name: canyon-s3
     image: zhangtao25/canyon-s3:main
@@ -22,11 +22,11 @@ services:
     image: zhangtao25/canyon-homepage:main
     restart: always
     ports:
-      - "28001:3000"
+      - "8080:3000"
 
   canyon-docs:
     container_name: canyon-docs
     image: zhangtao25/canyon-docs:main
     restart: always
     ports:
-      - "28002:3000"
+      - "3000:3000"
